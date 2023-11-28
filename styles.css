@@ -1,0 +1,368 @@
+/* INICIO INDEX */
+* {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(12, 34, 41);
+  width: 100%;
+}
+html{
+  scroll-behavior:smooth;
+}
+/* Inicio Header y Nav-Menu */
+h1 {
+  font-family: 'Libre Baskerville', serif;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  padding: 20px 0 70px 0;
+  color: rgb(255, 255, 255);
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+.logo{
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}
+.div-logo{
+  position: absolute;
+  top: 6px;
+  left: 550px;
+}
+#lupita {
+  width: 150px;
+}
+h3 {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+}
+.primeraLista {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(33, 51, 51);
+  padding: 12px;
+}
+.menu-nav li {
+  display: inline-flex;
+  font-size: 15px;
+}
+.ulNav{ 
+  display: flex;
+  gap: 9rem;
+}
+.aNav {
+  color: rgb(222, 184, 135);
+  text-decoration: none;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+.aNav:hover{
+  width: 100%;
+  height: 2px;
+  background-color:rgb(255, 255, 255);
+  transition: all .15s ease-in  ;
+}
+/* Fin Header */
+
+/* Inicio Main */
+.subtitulo {
+  color: rgb(255, 255, 240);
+  font-size: 1rem;
+  text-align: start;
+  font-weight: lighter;
+  margin: 0 30px 7px 50px;
+}
+main img {
+  height: 30vh;
+  width: 30vh;
+}
+p {
+  color: rgb(222, 184, 135);
+  font-size: 1rem;
+}
+.productos-description{
+  text-align: start;
+  margin-inline: 2rem;
+  margin-top: 10px;
+}
+.container-productos {
+  display: grid;
+  gap: 14rem;
+  grid-template-rows: repeat(3, 20rem);
+  grid-template-columns: repeat(2, 1fr);
+  margin:5% 25% 15% 25%;;
+}
+
+.btn-modifier{
+  border: none;
+  border-radius: 3px;
+  height: 35px;
+  width: 90px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-block-start: 15px;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande","Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: rgb(129, 129, 129);
+  color: rgb(255, 255, 255);
+  transition: all .4s ease;
+}
+.btn-modifier:hover {
+  background-color: rgb(184, 184, 184);
+}
+.btn-buy {
+  display: flex;
+  align-items: center;
+  margin-inline: 4.3rem;
+  margin-bottom: 200px;
+}
+span {
+  color: #fff;
+  font-size: 1.1rem;
+  display: flex;
+  margin-inline: 5.5rem;
+  margin-top: 10px;
+}
+/* Fin del Main */
+
+/* Inicio del Footer */
+
+.nav-apartado {
+  text-align: start;
+}
+.segundaLista {
+  list-style: none;
+  margin-left: 5px;
+}
+.segundaLista li {
+  margin-top: 10px;
+}
+.enlace-Foot {
+  color: rgb(255, 255, 240);
+  text-decoration: none;
+  font-weight: lighter  ;
+  font-size: 15px;
+}
+.grid-footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.Inp-reclamo textarea {
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  max-width: 430px;
+  min-width: 430px;
+  min-height: 100px;
+  max-height: 110px;
+}
+.btn-enviar {
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 15px;
+  width: 120px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.Inp-reclamo .btn-enviar:hover {
+  background-color: rgb(79, 212, 252);
+}
+/* FIN DEL INDEX */
+
+/* Inicio HTML contacto */
+.bodyContact {
+  background-color: rgb(255, 255, 255);
+  min-height: 100vh;
+}
+.container-pageContact{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight:600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin:30px 0 0 0;
+  margin-inline-start: 80px; 
+}
+.container-pageContact a{
+  text-decoration: none;
+  font-size: 11px;
+}
+.container-pageContact span{
+  font-size: 11px;
+  color: rgb(0, 0, 0);
+  margin: 0 3px 0 3px;
+}
+.container-pageContact h2{
+  letter-spacing: 2px;
+  font-size: 2rem;
+  font-weight: lighter;
+  color: rgb(0, 0, 0);
+  margin-block-start: 70px;
+  margin-bottom: 30px;
+}
+.pContact {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: 'Nunito', sans-serif;
+  color: rgb(0, 0, 0);
+  margin-inline-start:70px;
+  margin-bottom: 1rem !important;
+}
+i{
+  padding: 10px;
+}
+form{
+  margin-left: 35%;
+  border-radius: 20px;
+  padding: 10px 20px;
+  box-shadow: 9px 0 27px rgb(36, 218, 109);
+  text-align: left;
+  width: 25%;
+  margin-block: -200px;
+  margin-right: 100px;
+}
+.orden-FormContact{
+  display: contents;
+  flex-wrap: wrap;
+}
+.input-groupContact{
+  display: flex;
+  flex-direction: column;
+}
+label{
+  font-size: 15px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+input, textarea{
+  color: #ffffff;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  padding: 13px 10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  font-size: 15px;
+  background-color: rgb(100, 97, 97);
+  border: 2px solid #939393;
+  outline-color: rgb(221, 221, 221);
+}
+input::placeholder, textarea::placeholder{
+  color: #adadad;
+}
+.btn-form{
+border: 0;
+margin-top: 10px;
+font-size: 16px;
+border-radius: 25px;
+background-color: #51D94C;
+box-shadow:0 7px 27px rgba(25, 254, 0, 0.4);
+cursor:pointer;
+}
+.btn-form:hover{
+  background-color: #50E04B;
+  transition: all .1s ease;
+}
+/* Fin HTML contacto */
+/* Inicio de Cuidados */
+.bodyCuidados {
+  background-color: rgb(255, 235, 205);
+}
+.pCuidados {
+  color: rgb(0, 0, 0);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 13px;
+}
+.pdeCuidados {
+  color: rgb(0, 0, 0);
+  font-family: "Nunito", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+}
+/* Fin de Cuidados */
+
+/* Pág con uso de bootstrap */
+.tesoritosBckgr{
+  background-color: rgb(255, 255, 255);
+}
+/* DropDown de la compra */
+.btn-group-position{
+  position: relative !important;
+  display: flex;
+  justify-content: end;
+  top: 110px;
+  margin-right: 110px;
+}
+.nav{
+  --bs-nav-link-padding-x: 2rem;
+  --bs-nav-link-padding-y: 40rem;
+}
+.btn{
+  --bs-btn-padding-x: 0.75rem;
+  --bs-btn-padding-y: 0.3rem;
+  font-size: 13px;
+
+}
+.dropdown-menu{
+  --bs-dropdown-item-padding-x: 5px;
+  --bs-dropdown-item-padding-y: 0.35rem;
+  font-size: 12.5px;
+}
+.dropdown-item{
+  font-weight: 600;
+}
+/* Fin del dropdown */
+
+
+/* Nav desplegable */
+
+.navbar{
+  --bs-navbar-toggler-font-size: .9rem;
+}
+.navbar-nav{
+  --bs-nav-link-padding-y: 0.95rem;
+}
+.nav-link{
+  font-size: 15px;
+  font-weight: 600;
+}
+.offcanvas{
+  --bs-offcanvas-transition: transform 0.39s ease-in-out;
+  --bs-offcanvas-width: 350px;
+}
+.form-control{
+  padding: 0.355rem 0.75rem;
+  font-size: 15px;
+}
+/* Main Productos */
+.row{
+  margin-top: 160px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+.col{
+  height: 300px;
+  border: 1px solid black;
+}
+.btn-primary{
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.organizar{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
