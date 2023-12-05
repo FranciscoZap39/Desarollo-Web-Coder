@@ -1,157 +1,260 @@
 <!DOCTYPE html>
-<html lang="es">
+<html class="index" lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dekel</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Lora&family=Nunito&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <script src="https://kit.fontawesome.com/2bbf7e89b7.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dekel</title>
+    <link rel="stylesheet" href="./estilos/styles.css">
 </head>
 
-<body>
-  <header>
-    <h1 id="home">Dekel Joyeria</h1>
-    <div class="div-logo">
-      <img src="./img/Official-logo.png" alt="logo de la página web" class="logo" />
-    </div>
-    <!-- <h3>Búsqueda 🔍</h3>
-      <input type="search" name="busqueda" id="lupita" />
-     -->
-    <hr>
-    <div class="primeraLista">
-      <nav class="menu-nav">
-        <ul class="ulNav">
-          <li><a class="aNav" href="./paginas/tesoritos.html">Tesoritos</a></li>
-          <li><a class="aNav" href="./paginas/cambios.html">Cambios</a></li>
-          <li><a class="aNav" href="./paginas/cuidados.html">Cuidados</a></li>
-          <li><a class="aNav" href="./paginas/contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-    <hr>
-  </header>
-<!-- Main con los productos -->
-  <main class="container-productos">
-    <section class="section-productos">
-      <h2 class="subtitulo">Cadena de oro</h2>
-      <img src="./img/collar-de-oro.jpg" alt="Cadena de oro" />
-      <p class="productos-description">"Descripción del collar"</p>
-      <span>$1000</span>
-      <div class="btn-buy">
-        <button class="btn-modifier">comprar</button>
-      </div>
-    </section>
+<body class="indexBody">
+    <header>
+        <div class="container-hero">
+            <div class="container-logo">
+                <img src="./galeria/Official-logo.png" alt="logo-de-la-página-web" id="inicio" class="logo-size" />
+                <h1 id="home">Dekel Joyeria</h1>
+            </div>
+            <div class="container hero">
+                <div class="container-user">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="separacion-iconos"></span>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="content-shopping-cart">
+                    </div>
+                </div>
+            </div>
+            <div class="container-navbar">
+                <nav class="navegación-Page container">
+                    <i class="fa-solid fa-bars"></i>
+                    <ul class="menu">
+                        <li><a href="./paginas/tesoritos.html">Tesoritos</a></li>
+                        <li><a href="./paginas/cambios.html">Cambios</a></li>
+                        <li><a href="./paginas/contacto.html">Contacto</a></li>
+                        <li><a href="./paginas/cuidados.html">Cuidados</a></li>
+                    </ul>
+                    <!-- Se me daña el codigo con la pagina Contacto, estuve cambiando las clases pero no entendi que pueda ser... -->
+                    <!-- <div class="search-nav-index">
+                        <input type="search" placeholder="Buscar..." />
+                        <button class="boton-buscar">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div> -->
+                </nav>
+            </div>
+    </header>
 
-    <section class="section-productos">
-      <h2 class="subtitulo">Collar de perlas</h2>
-      <img src="./img/collar-de-perlas.jpg" alt="Collar de perlas" />
-      <p class="productos-description">"Descripción del collar"</p>
-      <span>$1000</span>
-      <div class="btn-buy">
-        <button class="btn-modifier">comprar</button>
-      </div>
-    </section>
-
-    <section class="section-productos">
-      <h2 class="subtitulo">Cadena de plata</h2>
-      <img src="./img/collar-de-plata.jpg" alt="Cadena de plata" />
-      <p class="productos-description">"Descripción del collar"</p>
-      <span>$1000</span>
-      <div class="btn-buy">
-        <button class="btn-modifier">comprar</button>
-      </div>
-    </section>
-
-    <section class="section-productos">
-      <h2 class="subtitulo">Cadena con cruz</h2>
-        <img src="./img/collar-cruz.avif" alt="Cadena con una cruz de Cristo">
-        <p class="productos-description">"Descripción del collar"</p>
-        <span>$1000</span>
-        <div class="btn-buy">
-          <button class="btn-modifier">comprar</button>
+    <section class="bannerPrincipal">
+        <div class="content-banner">
+            <h2>¡Bienvenidos a Dekel Joyeria!</h2>
+            <p>Si buscas otras opciones clickea abajo!</p>
+            <a href="./paginas/tesoritos.html">Mira más acá!</a>
         </div>
     </section>
 
-    <section class="section-productos">
-      <h2 class="subtitulo">Cadena con piedrita</h2>
-        <img src="./img/cadena-con-piedra.jpg" alt="Cadena con una piedrita de cuarzo">
-        <p class="productos-description">"Descripción del collar"</p>
-        <span>$1000</span>
-        <div class="btn-buy">
-          <button class="btn-modifier">comprar</button>
+    <main class="main-content">
+        <section class="container container-features">
+            <div class="card-feature">
+                <i class="fa-solid fa-truck-fast"></i>
+                <div class="feature-content">
+                    <span>Envíos Gratis a todo el país.</span>
+                </div>
+            </div>
+
+            <div class="card-feature">
+                <i class="fa-solid fa-credit-card"></i>
+                <div class="feature-content">
+                    <span>Pagá con todas las tarjetas.</span>
+                </div>
+            </div>
+
+            <div class="card-feature">
+                <i class="fa-solid fa-headset"></i>
+                <div class="feature-content">
+                    <span>Atención al cliente las 24/7.</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Section MainProducts -->
+    <section class="container top-products">
+        <h1 class="heading-1">Mejores Productos</h1>
+
+        <div class="container-options">
+            <span class="active">Destacados</span>
+            <span>Más recientes</span>
+            <span>Más vendidos</span>
+        </div>
+
+        <div class="container-products">
+            <!-- Producto 1 -->
+            <div class="card-product">
+                <div class="container-img">
+                    <img src="./galeria/collar-de-oro.jpg" alt="cadena-colgante-de-oro">
+                    <div class="button-group">
+                        <span>
+                            <i class="fa-regular fa-eye"></i>
+                        </span>
+                        <span>
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="content-card-product">
+                    <h3>Cadena de oro</h3>
+                    <span class="add-cart">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </span>
+                    <p class="price">$9.000</p>
+                </div>
+            </div>
+            <!-- Producto 2 -->
+            <div class="card-product">
+                <div class="container-img">
+                    <img src="./galeria/cadena-con-piedra.jpg" alt="cadena-con-piedra-de-cuarzo">
+                    <div class="button-group">
+                        <span>
+                            <i class="fa-regular fa-eye"></i>
+                        </span>
+                        <span>
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="content-card-product">
+                    <h3>Cadena con piedra</h3>
+                    <span class="add-cart">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </span>
+                    <p class="price">$3.600 <span>$5.300</span></p>
+                </div>
+            </div>
+            <!-- Producto 3 -->
+            <div class="card-product">
+                <div class="container-img">
+                    <img src="./galeria/collar-de-perlas.jpg" alt="collar-de-perlas">
+                    <div class="button-group">
+                        <span>
+                            <i class="fa-regular fa-eye"></i>
+                        </span>
+                        <span>
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="content-card-product">
+                    <h3>Collar de perlas</h3>
+                    <span class="add-cart">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </span>
+                    <p class="price">$4.500</p>
+                </div>
+            </div>
+            <!-- Producto 4 -->
+            <div class="card-product">
+                <div class="container-img">
+                    <img src="./galeria/collar-de-plata.jpg" alt="cadena-de-plata-colgante">
+                    <div class="button-group">
+                        <span>
+                            <i class="fa-regular fa-eye"></i>
+                        </span>
+                        <span>
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="content-card-product">
+                    <h3>Cadena de plata</h3>
+                    <span class="add-cart">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </span>
+                    <p class="price">$2.100<span>4.100$</span></p>
+                </div>
+            </div>
         </div>
     </section>
+    <!-- Galeria  -->
+    <h4>Un poco de lo nuestro...</h2>
+        <section class="gallery">
+            <img src="./galeria/exhibicion-cadena-dorada-brillante.jpg" alt="cadena-reluciente-dorada" class="galeria-img-1">
+            <img src="./galeria/retrato-mujer-joven-aretes.jpg" alt="mujer-posando-aretes" class="galeria-img-2">
+            <img src="./galeria/diferentes-herramientas-trabajo-joyeria.jpg" alt="trabajo-hombre-joyas-joyeria" class="galeria-img-3">
+            <img src="./galeria/surtido-pendientes-dorados-esteticos.jpg" alt="surtido-pendientes-dorados" class="galeria-img-4">
+            <img src="./galeria/hermoso-anillo-compromiso-diamantes.avif" alt="anillo-de-casamiento" class="galeria-img-5">
+        </section>
 
-    <section class="section-productos">
-      <h2 class="subtitulo">Cadena de plata</h2>
-        <img src="./img/cadenita-reluciente.jpg" alt="Cadena de plata reluciente">
-        <p class="productos-description">"Descripción del collar"</p>
-        <span>$1000</span>
-        <div class="btn-buy">
-          <button class="btn-modifier">comprar</button>
-        </div>
-    </section>
-  </main>
 
-  <!-- Navegacion y comienzo del pie de pagina que va a redireccionar tanto interno como externo. -->
-  <hr>
-  <footer class="grid-footer">
-    <section>
-      <p class="nav-apartado">Navegación</p>
-      <ul class="segundaLista">
-        <li><a class="enlace-Foot" href="#home">Home</a></li>
-        <li>
-          <a class="enlace-Foot" href="./paginas/cambios.html">Cambios y Devoluciones</a>
-        </li>
-        <li><a class="enlace-Foot" href="./paginas/contacto.html">Contacto</a></li>
-      </ul>
-    </section>
-
-    <section>
-      <!-- Agregar los target cuando tenga ya las redes -->
-      <p class="nav-apartado">Contactanos</p>
-      <ul class="segundaLista">
-        <li>
-          <a class="enlace-Foot" href=""><i class="fa-regular fa-envelope fa-lg" style="color: #ffffff"></i> Gmail</a>
-        </li>
-        <li>
-          <a class="enlace-Foot" href=""><i class="fa-brands fa-instagram fa-lg" style="color: #ffffff"></i> Instagram</a>
-        </li>
-        <li>
-          <a class="enlace-Foot" href=""><i class="fa-brands fa-whatsapp fa-lg" style="color: #ffffff"></i> Whatsapp</a>
-        </li>
-      </ul>
-    </section>
-
-    <!--   En esta section me falta agregar un mapa que me lleve ahi -->
-    <section>
-      <p class="nav-apartado">Encontranos en</p>
-      <ul class="segundaLista">
-        <li><a class="enlace-Foot">Av.Bustafante 1394 Córdoba</a></li>
-      </ul>
-    </section>
-
-    <section class="Inp-reclamo">
-      <p class="nav-apartado">Reclamos</p>
-      <textarea name="mensaje" placeholder="Deja tu comentario..."></textarea>
-      <input type="submit" name="enviar" value="Enviar mensaje" class="btn-enviar" />
-    </section>
-  </footer>
-  <div>
-    <ul>
-      <li><a href=""></a>tontito</li>
-      <li><a href=""></a>Qonda</li>
-      <li><a href=""></a>Hola</li>
-      <li><a href=""></a>Chau</li>
-    </ul>
-  </div>
+        <footer class="footer-page-principal">
+            <div class="container container-footer">
+                <div class="menu-footer">
+                    <div class="nav-apartado-info">
+                        <p class="title-footer">Navegación</p>
+                        <ul>
+                            <li><a href="#inicio">Inicio</a></li>
+                            <li><a href="./paginas/contacto.html">Contacto</a></li>
+                            <li><a href="./paginas/cambios.html">Devoluciones</a></li>
+                        </ul>
+                        <div class="social-icons-info">
+                            <!-- Agregar redes sociales -->
+                            <span class="facebook-icon"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></span>
+                            <span class="whatsapp-icon"><a href="#"><i class="fa-brands fa-whatsapp"></i></a></span>
+                            <span class="instagram-icon"><a href="#"><i class="fa-brands fa-instagram"></i></a></span>
+                        </div>
+                    </div>
+                    <!-- Aca los href no me llevan a nada, son estaticos -->
+                    <div class="information">
+                        <p class="title-footer">Información</p>
+                        <ul>
+                            <li><a href="#">Acerca de nosotros</a></li>
+                            <li><a href="#">Términos y condiciones</a></li>
+                            <li><a href="#">Póliticas de privacidad</a></li>
+                        </ul>
+                    </div>
+                    <div class="my-account">
+                        <p class="title-footer">Mi cuenta</p>
+                        <ul>
+                            <li><a href="#">Mi cuenta</a></li>
+                            <li><a href="#">Lista de deseos</a></li>
+                            <li><a href="#">Reembolsos</a></li>
+                        </ul>
+                    </div>
+                    <div class="apartado-informativo">
+                        <p class="title-footer">Boletín Informativo</p>
+                        <div class="content">
+                            <p>
+                                Suscribete y mantente al dia con nuevas colecciones y ofertas imperdibles!
+                            </p>
+                            <input type="email" placeholder="Ingresa el correo aquí...">
+                            <button>Suscribete</button>
+                        </div>
+                    </div>
+                </div>
+            <div class="tarjetas-de-pago">
+                <img src="./galeria/payment.png" alt="formas-de-pago-con-tarjetas">
+                <p>No tienes cuenta?<a href="#">Crear cuenta</a><span>o</span><a href="#">Iniciar sesión</a></p>
+            </div>
+            </div>
+            <div class="copyright">
+                <p>
+                    Desarrolado por Francisco Zapata | &copy; DEKEL-2023. Todos los derechos reservados.
+                </p>
+            </div>
+        </footer>
+        <script src="https://kit.fontawesome.com/2bbf7e89b7.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
