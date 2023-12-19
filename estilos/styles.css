@@ -25,9 +25,9 @@ html{
 
 .heading-1 {
   text-align: center;
-  font-weight: 500;
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
   color: #564334;
 }
 
@@ -72,11 +72,6 @@ html{
   gap: 1rem;
 }
 
-.content-shopping-cart {
-  display: flex;
-  flex-direction: column;
-}
-
 .container-user .fa-user {
   font-size: 1.6rem;
   color: #443a37;
@@ -100,13 +95,8 @@ html{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  padding: 1.2rem 0;
 }
-
-.navegación-Page .fa-bars {
-  display: none;
-}
-
 .menu {
   display: flex;
   gap: 2rem;
@@ -143,8 +133,8 @@ html{
 .menu a:hover {
   color: #d8c8b8;
 }
-
-.search-nav-index {
+/* Revisar */
+/* .search-nav-index {
   position: relative;
   display: flex;
   align-items: center;
@@ -184,50 +174,46 @@ html{
 .btn-search i {
   color: #fff;
   font-size: 1.5rem;
-}
+} */
 /* Fin del nav */
+
 /* Section Principal Banner */
 .bannerPrincipal {
   background-image: linear-gradient(200deg, #b3b3b3, #00000020),
     url('../galeria/joyeria-banner.avif');
-  height: 70rem;
+  height: 80rem;
   background-size: cover;
   background-position: end center;
 }
-
 .content-banner {
   max-width: 90rem;
   margin: 0 auto;
   padding: 25rem 0;
 }
-
-.content-banner p {
-  color: rgb(255, 255, 255);
-  font-size: 1.45rem;
-  margin-bottom: 1rem;
-  font-weight: 500;
-}
-
 .content-banner h2 {
   color: #ffffff;
-  font-size: 3.5rem;
+  font-size: 5rem;
   font-weight: 500;
   line-height: 3.2;
 }
-
+.content-banner p {
+  color: rgb(255, 255, 255);
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+}
 .content-banner a {
   margin-top: 1.5rem;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   color: #fff;
   font-size: 1.25rem;
   background-color: #c7b299;
   display: inline-block;
-  padding: .8rem 2rem;
+  padding: 1rem 2rem;
   letter-spacing: 1px;
   border-radius: 3rem;
 }
-
 .content-banner a:hover {
   background-color: #d8c8b8;
   transition: all .3s ease;
@@ -240,35 +226,34 @@ html{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
-  padding: 3rem 0;
+  padding: 5rem 0;
 }
 
 .card-feature {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.5rem;
+  gap: 2rem;
 
   background-color: #c7b299;
   border-radius: 1rem;
-  padding: 1.2rem 0;
+  padding: 1.2rem 0rem;
 }
 
 .card-feature i {
-  font-size: 2.7rem;
+  font-size: 2.6rem;
   color: #241811;
 }
 
 .feature-content {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
 }
 
 .feature-content span {
   color: rgb(255, 255, 255);
   font-weight: 600;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 /* Sección de productos */
@@ -315,7 +300,7 @@ html{
 }
 
 .card-product {
-  margin-bottom: 7rem;
+  margin: 3rem 0 7rem 0;
   background-color: #ffffff;
   padding: 2rem 3rem;
   border-radius: 0.5rem;
@@ -477,14 +462,14 @@ h4 {
   display: grid;
   grid-template-columns: repeat(3, 1fr) 30rem;
   gap: 3rem;
-  justify-items: center;
 }
 
 .menu-footer .title-footer {
+  justify-items: center;
+  align-items: center;
   color: #302c25;
   font-size: 1.6rem;
-  font-weight: 500;
-  align-items: center;
+  font-weight: 600;
 }
 
 .nav-apartado-info,
@@ -501,13 +486,9 @@ h4 {
   flex-direction: column;
   gap: 1rem;
 }
-
 .menu-footer li {
   list-style: none;
-  font-size: 1rem;
-  font-weight: 300;
 }
-
 .menu-footer a:hover {
   color: rgb(202, 202, 202);
 }
@@ -517,9 +498,8 @@ h4 {
 .my-account ul li a {
   text-decoration: none;
   color: #e6e6e6;
-  font-size: 1.15rem;
+  font-size: 1.3rem;
   font-weight: 600;
-  letter-spacing: 0.9px;
 }
 
 .menu-footer span {
@@ -570,9 +550,9 @@ h4 {
 }
 
 .content p {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: rgb(255, 255, 255);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .content input {
@@ -623,7 +603,7 @@ h4 {
 .tarjetas-de-pago p {
   color: #e2e2e2;
   font-size: small;
-  margin: 0 0 0 20px;
+  margin: 0 0 0 65rem;
 }
 
 .tarjetas-de-pago span {
@@ -639,76 +619,80 @@ h4 {
 }
 
 .copyright {
-  color: #e6e3e3;
   padding-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 500;
   font-family: inherit;
+}
+.copyright p{
+  color: #ffffff;
 }
 
 
 /* Media Queries */
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
   .hero {
-    padding: 1rem;
+    padding: .7rem;
   }
-
-  .content-shopping-cart {
-    display: none;
+  .container-user .fa-user{
+    font-size: 1.4rem;
   }
-
+  .container-user .fa-cart-shopping{
+    font-size: 1.4rem;
+  }
+  .content-banner h2 {
+    font-size: 3rem;
+  }
   .navegación-Page {
-    padding: 1rem 1.2rem;
+    padding: 1.2rem 1.2rem;
   }
-
-  .navegación-Page .fa-bars {
-    display: block;
-    color: #fff;
-    font-size: 1rem;
+  .navegación-Page a{
+    font-size: 1.14rem;
   }
-
-  .menu {
-    display: none;
-  }
-
   .content-banner {
     max-width: 50rem;
     margin: 0 auto;
-    padding: 10rem 0;
+    padding: 20rem 0;
   }
-
+  .bannerPrincipal{
+    height: 70rem;
+  }
   .container-features {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 3rem 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5rem 2rem;
   }
-
   .card-feature {
-    padding: 2rem;
+    padding: 1.5rem;
   }
-
   .heading-1 {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
   }
-
   .container-options {
     align-items: center;
   }
-
   .container-options span {
     text-align: center;
     padding: 1rem 2rem;
   }
-
   .container-products {
-    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  }
+  .container-products {
+    padding: .8rem 2rem;
+  }
+  .container-products h3{
+    font-size: 1.7rem;
+  }
+  .container-img img {
+    width: 100%;
   }
 
   .gallery {
-    grid-template-rows: repeat(2, 15rem);
+    grid-template-rows: repeat(2, 25rem);
   }
 
   .menu-footer {
@@ -725,7 +709,7 @@ h4 {
 
 /* Media Queries */
 @media (max-width: 468px) {
-  html {
+  .index {
     font-size: 42.5%;
   }
 
@@ -735,7 +719,7 @@ h4 {
   }
 
   .heading-1 {
-    font-size: 2.8rem;
+    font-size: 3rem;
   }
 
   .card-feature {
@@ -775,13 +759,9 @@ h4 {
   .gallery {
     grid-template-rows: repeat(2, 20rem);
   }
-
-  .nav-apartado-info ul,
-  .information ul,
-  .my-account ul {
+  .tarjetas-de-pago p{
     display: none;
   }
-
   .contact-info {
     align-items: center;
   }
@@ -789,9 +769,29 @@ h4 {
   .menu-footer {
     grid-template-columns: 1fr;
   }
-
+  .menu-footer .title-footer{
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+  
+  .nav-apartado-info ul li a,
+  .information ul li a,
+  .my-account ul li a {
+  font-size: 1.6rem;
+  font-weight: 600;
+  }
+  .logo-size{
+    width: 35px;
+    height: 35px;
+  }
   .content p {
     font-size: 1.6rem;
+  }
+  .apartado-informativo p {
+    margin-bottom: 10px;
+  }
+  .content input{
+    display: none;
   }
 }
 
@@ -1019,7 +1019,7 @@ textarea::placeholder {
   font-size: 1.5em;
 }
 footer .container-cuidados{
-  height: 70px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1105,91 +1105,235 @@ footer{
 }
 /* Fin de CuidadosHtml*/
 
-/* Pág con uso de bootstrap Tesoritos*/
-.tesoritosBckgr {
-  background-color: rgb(255, 255, 255);
-}
+/* Inicio Cambios y Devoluciones */
 
-/* DropDown de la compra */
-.btn-group-position {
-  position: relative !important;
+/* Header */
+.CambiosHeader{
+  padding: 1.3rem 0;
+  background-color: #939393;
+}
+.CambiosLogo{
+  position: absolute;
+  top: 10px;
+  margin-left: 5px;
+}
+.CambiosLogo img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+/* Nav */
+.CambiosNav{
+  margin-right:20px;
   display: flex;
+  gap: 1.5rem;
   justify-content: end;
-  top: 110px;
-  margin-right: 110px;
-}
-
-.nav {
-  --bs-nav-link-padding-x: 2rem;
-  --bs-nav-link-padding-y: 40rem;
-}
-
-.btn {
-  --bs-btn-padding-x: 0.75rem;
-  --bs-btn-padding-y: 0.3rem;
-  font-size: 13px;
-
-}
-
-.dropdown-menu {
-  --bs-dropdown-item-padding-x: 5px;
-  --bs-dropdown-item-padding-y: 0.35rem;
-  font-size: 12.5px;
-}
-
-.dropdown-item {
-  font-weight: 600;
-}
-
-/* Fin del dropdown */
-
-
-/* Nav desplegable */
-
-.navbar {
-  --bs-navbar-toggler-font-size: .9rem;
-}
-
-.navbar-nav {
-  --bs-nav-link-padding-y: 0.95rem;
-}
-
-.nav-link {
-  font-size: 15px;
-  font-weight: 600;
-}
-
-.offcanvas {
-  --bs-offcanvas-transition: transform 0.39s ease-in-out;
-  --bs-offcanvas-width: 350px;
-}
-
-.form-control {
-  padding: 0.355rem 0.75rem;
-  font-size: 15px;
-}
-
-/* Main Productos */
-.row {
-  margin-top: 160px;
-  border: 1px solid black;
-  margin-bottom: 20px;
-}
-
-.col {
-  height: 300px;
-  border: 1px solid black;
-}
-
-.btn-primary {
-  font-size: 14px;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.organizar {
-  display: flex;
   align-items: center;
-  justify-content: space-around;
+}
+.CambiosNav li{
+  list-style:none;
+}
+.CambiosNav a{
+  font-size:.8rem;
+  font-weight: bold;
+  font-family: 'Inconsolata', monospace;
+  letter-spacing: 0.8px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.CambiosNav a:hover{
+  transition: all .3s ease;
+  color: #dddada;
+}
+/* Informacion de la pagina */
+.DescripcionCambios{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 2rem 0 0 1rem;
+}
+.DescripcionCambios{
+  gap: .4rem;
+}
+.DescripcionCambios a{
+  font-family: 'Inconsolata', monospace;
+  text-align: center;
+  font-size: small;
+  text-decoration: none;
+  color: rgb(39, 39, 39);
+}
+.DescripcionCambios a:hover{
+  text-decoration: underline;
+}
+.DescripcionCambios h1{
+  font-size: small;
+  font-family: 'Inconsolata', monospace;
+  font-weight: lighter;
+}
+.ParrafosCambios{
+  line-height: 35px;
+  margin: 20px 0;
+  font-weight: lighter;
+  font-size: 17px;
+  padding: 1.5rem .5rem;
+}
+.ParrafosCambios h2{
+  font-size: 18px;
+  font-weight: lighter;
+  margin: 35px 0 10px 0;
+  color: rgb(255, 0, 0);
+}
 
+
+/* Footer Page CAMBIOS */
+.pie-pagina-cambios{
+  width: 100%;
+  background-color: #575c61;
+}
+.pie-pagina-cambios .grupo-1{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap:50px;
+  padding: 45px 0px;
+}
+.pie-pagina-cambios .grupo-1 .contenedor-cambios ul{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: start;
+  gap: .7rem;
+}
+.pie-pagina-cambios .grupo-1 .contenedor-cambios li {
+  list-style: none;
+}
+.pie-pagina-cambios .grupo-1 .contenedor-cambios a{
+  color:#b6b6b6;
+  text-decoration: none;
+}
+.pie-pagina-cambios .grupo-1 .contenedor-cambios a:hover{
+  color:#dadada;
+}
+.pie-pagina-cambios .grupo-1 .contenedor-cambios h2{
+  color:#dadada;
+  margin-bottom: 15px;
+  font-size: 19px;
+  font-weight: lighter;
+}
+.pie-pagina-cambios .grupo-1 .contenedor-cambios p{
+  color:#efefef;
+  margin-bottom: 10px;
+}
+.pie-pagina-cambios .grupo-1 .red-social-cambios a{
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  line-height: 45px;
+  color: #b6b6b6;
+  margin-right: 10px;
+  background-color: rgb(19, 19, 19);
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie-pagina-cambios .grupo-1 .red-social-cambios a:hover{
+  color: rgb(245, 245, 245);
+}
+.pie-pagina-cambios .grupo-2{
+  background-color: #5e6063;
+  padding: 10px 10px;
+  text-align: center;
+  color: #fff;
+}
+.pie-pagina-cambios .grupo-2 small{
+  font-size: 15px;
+}
+@media screen and (max-width:510px){
+  .CambiosHeader{
+    padding: 1rem;
+  }
+  .CambiosLogo img{
+    width: 35px;
+    height: 35px;
+  }
+  .ParrafosCambios{
+    font-size: 14.5px;
+  }
+  .pie-pagina-cambios .grupo-1{
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap:30px;
+      padding: 35px 0px;
+  }
+  .pie-pagina-cambios .grupo-1 .contenedor-cambios h2{
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .pie-pagina-cambios .grupo-2 small{
+    font-size: 13px;
+  }
+  .pie-pagina-cambios .grupo-1 .red-social-cambios a{
+    line-height: 35px;
+    width: 35px;
+    height: 35px;
+  }
+}
+/* Fin de cambios html */
+
+/* Tesoritos html*/
+#menu a{
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+}
+
+#img-dekel{
+  max-height:30rem !important;
+  width:60%;
+}
+
+/*=========================FOOTER================================*/
+#footer-cambios {
+  background: #1b2a4e;
+  min-height: 100px;;
+
+}
+#footer-cambios p{
+  color:#f3f3f3;
+  text-align:center;
+  font-size: small !important;
+}
+/*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
+
+@media (max-width:1200px){
+  #intro, #nosotros {
+      width:90% !important;
+      margin:auto;
+  }
+}
+/*=========================MEDIA QUERIES PANTALLA SM================================*/
+
+@media (max-width:768px) {
+
+  #intro, #nosotros{
+      width:90% !important;
+      margin:auto;
+  }
+  #img-dekel{
+      max-height:20rem !important;
+      width:90%;
+  }
+}
+/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
+
+@media (max-width: 576px) {
+  #lujos-fila-2 {
+      width:100% !important;
+  }
+  #lujos-fila-1 {
+      width:100% !important;
+  }
 }
